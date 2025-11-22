@@ -272,7 +272,7 @@ def remove_from_cart(item_id):
 @app.route('/api/cart/checkout', methods=['POST'])
 def checkout():
     global mock_cart
-    # In a real app, we would process payment, create order, etc.
+    # In a real app, we would process payment, create order, etc.#
     mock_cart = []
     return jsonify({"success": True})
 
