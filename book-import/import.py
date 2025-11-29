@@ -6,7 +6,7 @@ from decimal import Decimal
 dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 table = dynamodb.Table('Books')
 
-# Load books from JSON file
+# Load books from JSON filee
 with open('books.json', 'r') as f:
     books_json = json.load(f)
     
